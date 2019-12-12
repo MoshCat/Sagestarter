@@ -31,7 +31,7 @@ Sagestarter is a WordPress starter theme based on [Roots/Sage](https://roots.io/
 $ git clone --depth=1 git@github.com:MoshCat/sagestarter.git your-theme-name
 ```
 
-* Or clone with submodules to include [Gravityforms Bootstrap Styling](https://github.com/MoshCat/gravityforms-bootstrap-styling) and [Gravityforms Bootstrap hooks](https://github.com/MoshCat/gravityforms-bootstrap-hooks) (see below):
+* Or clone with submodules to include [Gravityforms Bootstrap Styling](https://github.com/MoshCat/gravityforms-bootstrap-styling) and [Gravityforms Bootstrap hooks](https://github.com/MoshCat/gravityforms-bootstrap-hooks) ([see below](https://github.com/MoshCat/sagestarter#gravityforms)):
 ```shell
 # @ app/themes/ or wp-content/themes/
 $ git clone --recurse-submodules --depth=1 git@github.com:MoshCat/sagestarter.git your-theme-name
@@ -52,10 +52,10 @@ $ git init
 
 ## Gravityforms
 
-If you plan to use Gravityforms clone this git with submodules as mentioned above.
+If you plan on using Gravityforms, clone this git with submodules as mentioned above.
 If you have already cloned the project use: `git submodule update --init --recursive` to initialize, fetch and checkout all submodules.
 
-Dont forget to inlude the files in `functions.php` and `main.scss` by uncommenting the lines.
+Dont forget to inlude the files in `functions.php` (line 67) and `main.scss` (line 22) by uncommenting the lines.
 
 ## Build commands
 
