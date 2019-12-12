@@ -8,20 +8,19 @@ Sagestarter is a WordPress starter theme based on [Roots/Sage](https://roots.io/
 ## Features
 
 * Navigation with multilevel dropdown, mobile, keyboard & touchscreen support.
-* Cleanup dashboard with [Intervention](https://github.com/soberwp/intervention)
-* Starter variables ([global/_variables.scss](https://github.com/MoshCat/sagestarter/blob/master/resources/assets/styles/common/_variables.scss))
-* Uniform spacing with mixins ([global/_mixins.scss](https://github.com/MoshCat/sagestarter/blob/master/resources/assets/styles/common/_mixins.scss))
-* Widget styling [components/_widgets.scss](https://github.com/MoshCat/sagestarter/blob/master/resources/assets/styles/components/_widgets.scss)
-* Gallery styling [components/_galleries.scss](https://github.com/MoshCat/sagestarter/blob/master/resources/assets/styles/components/_galleries.scss))
-* Customised TinyMCE toolbar ([app/tinymce.php](https://github.com/MoshCat/sagestarter/blob/master/app/tinymce.php))
-* Custom searchform ([resources/searchform.php](https://github.com/MoshCat/sagestarter/blob/master/resources/searchform.php))
-* CustomEvent polyfill ([Sage docs](https://roots.io/sage/docs/sage-compatibility/#known-issues-with-internet-explorer))
-* Animated hamburger menu
+* Cleanup dashboard with [Intervention](https://github.com/soberwp/intervention).
+* Boilerplate variables ([global/_variables.scss](https://github.com/MoshCat/sagestarter/blob/master/resources/assets/styles/common/_variables.scss)).
+* Uniform spacing with mixins ([global/_mixins.scss](https://github.com/MoshCat/sagestarter/blob/master/resources/assets/styles/common/_mixins.scss)).
+* Widget styling [components/_widgets.scss](https://github.com/MoshCat/sagestarter/blob/master/resources/assets/styles/components/_widgets.scss).
+* Gallery styling [components/_galleries.scss](https://github.com/MoshCat/sagestarter/blob/master/resources/assets/styles/components/_galleries.scss)).
+* Customised TinyMCE toolbar ([app/tinymce.php](https://github.com/MoshCat/sagestarter/blob/master/app/tinymce.php)).
+* CustomEvent polyfill ([Sage docs](https://roots.io/sage/docs/sage-compatibility/#known-issues-with-internet-explorer)).
+* Animated [hamburger](https://jonsuh.com/hamburgers/) menu.
 * Disabled Gutenburg editor and frontend block-styles.
-* Page & Archive styling
-* Gravityforms support in submodules
-* Webfontloader
-* Dutch translation
+* Basic page, blog, archive & search styling.
+* Gravityforms support in submodules ([Gravityforms Bootstrap Styling](https://github.com/MoshCat/gravityforms-bootstrap-styling) and [Gravityforms Bootstrap hooks](https://github.com/MoshCat/gravityforms-bootstrap-hooks)).
+* [Webfontloader](https://github.com/typekit/webfontloader).
+* Dutch translation.
 
 ## Theme installation
 
