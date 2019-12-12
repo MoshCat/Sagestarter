@@ -1,94 +1,48 @@
-# [Sage](https://roots.io/sage/)
+# [Sagestarter](https://github.com/MoshCat/sagestarter)
 [![Packagist](https://img.shields.io/packagist/vpre/roots/sage.svg?style=flat-square)](https://packagist.org/packages/roots/sage)
 [![devDependency Status](https://img.shields.io/david/dev/roots/sage.svg?style=flat-square)](https://david-dm.org/roots/sage#info=devDependencies)
 [![Build Status](https://img.shields.io/travis/roots/sage.svg?style=flat-square)](https://travis-ci.org/roots/sage)
 
-Sage is a WordPress starter theme with a modern development workflow.
+Sagestarter is a WordPress builerplate theme based on [Roots/Sage](https://roots.io/sage/).
 
 ## Features
 
-* Sass for stylesheets
-* Modern JavaScript
-* [Webpack](https://webpack.github.io/) for compiling assets, optimizing images, and concatenating and minifying files
-* [Browsersync](http://www.browsersync.io/) for synchronized browser testing
-* [Blade](https://laravel.com/docs/5.6/blade) as a templating engine
-* [Controller](https://github.com/soberwp/controller) for passing data to Blade templates
-* CSS framework (optional): [Bootstrap 4](https://getbootstrap.com/), [Bulma](https://bulma.io/), [Foundation](https://foundation.zurb.com/), [Tachyons](http://tachyons.io/), [Tailwind](https://tailwindcss.com/)
-
-See a working example at [roots-example-project.com](https://roots-example-project.com/).
-
-## Requirements
-
-Make sure all dependencies have been installed before moving on:
-
-* [WordPress](https://wordpress.org/) >= 4.7
-* [PHP](https://secure.php.net/manual/en/install.php) >= 7.1.3 (with [`php-mbstring`](https://secure.php.net/manual/en/book.mbstring.php) enabled)
-* [Composer](https://getcomposer.org/download/)
-* [Node.js](http://nodejs.org/) >= 8.0.0
-* [Yarn](https://yarnpkg.com/en/docs/install)
+* Navigation with multilevel dropdown, mobile, keyboard & touchscreen support.
+* Disabled Gutenburg editor and block-styles.
+* Cleanup dashboard with [Intervention](https://github.com/soberwp/intervention)
+* Starter variables ([global/_variables.scss](https://github.com/MoshCat/sagestarter/blob/master/resources/assets/styles/common/_variables.scss))
+* Spacing mixins ([global/_mixins.scss](https://github.com/MoshCat/sagestarter/blob/master/resources/assets/styles/common/_mixins.scss))
+* Widget styling [components/_widgets.scss](https://github.com/MoshCat/sagestarter/blob/master/resources/assets/styles/components/_widgets.scss)
+* Gallery styling [components/_galleries.scss](https://github.com/MoshCat/sagestarter/blob/master/resources/assets/styles/components/_galleries.scss))
+* Custom Tinymce toolbar ([app/tinymce.php](https://github.com/MoshCat/sagestarter/blob/master/app/tinymce.php))
+* Custom searchform ([resources/searchform.php](https://github.com/MoshCat/sagestarter/blob/master/resources/searchform.php))
+* CustomEvent polyfill ([Sage docs](https://roots.io/sage/docs/sage-compatibility/#known-issues-with-internet-explorer))
+* [Webfontloader](https://github.com/typekit/webfontloader)
+* [ACF Builder](https://github.com/StoutLogic/acf-builder)
+* ACF Flexbuilder ([Custom ACF pagebuilder](https://github.com/MoshCat/sagestarter/tree/master/app/fields))
+* Dutch translation
 
 ## Theme installation
 
-Install Sage using Composer from your WordPress themes directory (replace `your-theme-name` below with the name of your theme):
-
+* Clone Sagestarter to your WordPress themes directory:
 ```shell
 # @ app/themes/ or wp-content/themes/
-$ composer create-project roots/sage your-theme-name
+$ git clone --depth=1 git@github.com:MoshCat/sagestarter.git your-theme-name
 ```
-
-To install the latest development version of Sage, add `dev-master` to the end of the command:
-
+* Remove git history and create new git:
 ```shell
-$ composer create-project roots/sage your-theme-name dev-master
+# @ app/themes/ or wp-content/themes/themefolder
+$ rm -rf .git
+$ git init
 ```
-
-During theme installation you will have options to update `style.css` theme headers, select a CSS framework, and configure Browsersync.
-
-## Theme structure
-
-```shell
-themes/your-theme-name/   # → Root of your Sage based theme
-├── app/                  # → Theme PHP
-│   ├── Controllers/      # → Controller files
-│   ├── admin.php         # → Theme customizer setup
-│   ├── filters.php       # → Theme filters
-│   ├── helpers.php       # → Helper functions
-│   └── setup.php         # → Theme setup
-├── composer.json         # → Autoloading for `app/` files
-├── composer.lock         # → Composer lock file (never edit)
-├── dist/                 # → Built theme assets (never edit)
-├── node_modules/         # → Node.js packages (never edit)
-├── package.json          # → Node.js dependencies and scripts
-├── resources/            # → Theme assets and templates
-│   ├── assets/           # → Front-end assets
-│   │   ├── config.json   # → Settings for compiled assets
-│   │   ├── build/        # → Webpack and ESLint config
-│   │   ├── fonts/        # → Theme fonts
-│   │   ├── images/       # → Theme images
-│   │   ├── scripts/      # → Theme JS
-│   │   └── styles/       # → Theme stylesheets
-│   ├── functions.php     # → Composer autoloader, theme includes
-│   ├── index.php         # → Never manually edit
-│   ├── screenshot.png    # → Theme screenshot for WP admin
-│   ├── style.css         # → Theme meta information
-│   └── views/            # → Theme templates
-│       ├── layouts/      # → Base templates
-│       └── partials/     # → Partial templates
-└── vendor/               # → Composer packages (never edit)
-```
-
-## Theme setup
-
-Edit `app/setup.php` to enable or disable theme features, setup navigation menus, post thumbnail sizes, and sidebars.
-
-## Theme development
-
-* Run `yarn` from the theme directory to install dependencies
-* Update `resources/assets/config.json` settings:
+* Update `style.css` in the `resources` folder with your theme name.
+* Update `config.json` in the `resources/assets` folder:
   * `devUrl` should reflect your local development hostname
   * `publicPath` should reflect your WordPress folder structure (`/wp-content/themes/sage` for non-[Bedrock](https://roots.io/bedrock/) installs)
+* Run `composer install` in the theme directory
+* Run `yarn && yarn build` from the theme directory to install dependencies and build the theme assets
 
-### Build commands
+## Build commands
 
 * `yarn start` — Compile assets when file changes are made, start Browsersync session
 * `yarn build` — Compile and optimize the files in your assets directory
