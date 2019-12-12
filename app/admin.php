@@ -2,6 +2,13 @@
 
 namespace App;
 
+/*
+ * Remove the block styles file from wp_head()
+ */
+add_action('wp_enqueue_scripts', function () {
+    wp_dequeue_style('wp-block-library'); // Gutenberg blocks CSS
+});
+
 /**
  * Theme customizer
  */

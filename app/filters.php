@@ -17,6 +17,11 @@ add_filter('nav_menu_item_title', function ($title, $item, $args, $depth) {
 }, 10, 4);
 
 /**
+ * Disable Gutenberg editor
+ */
+add_filter('use_block_editor_for_post', '__return_false');
+
+/**
  * Add <body> classes
  */
 add_filter('body_class', function (array $classes) {
