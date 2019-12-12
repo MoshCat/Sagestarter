@@ -1,0 +1,6 @@
+[submodule "resources/assets/styles/gravityforms"]
+	path = resources/assets/styles/gravityforms
+	url = https://github.com/MoshCat/gravityforms-bootstrap-styling
+[submodule "app/gravityforms"]
+	path = app/gravityforms
+	url = https://github.com/MoshCat/gravityforms-bootstrap-hooks
