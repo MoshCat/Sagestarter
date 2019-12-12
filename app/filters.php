@@ -51,6 +51,24 @@ add_filter('image_size_names_choose', function ($sizes) {
 add_filter('use_block_editor_for_post', '__return_false');
 
 /**
+ * Enables the HTTP Strict Transport Security (HSTS) header.
+ */
+add_action('send_headers', function () {
+    header('Strict-Transport-Security: max-age=10886400');
+});
+
+/**
+ * Proper ob_end_flush() for all levels
+ *
+ * This replaces the WordPress `wp_ob_end_flush_all()` function
+ * with a replacement that doesn't cause PHP notices.
+ */
+remove_action('shutdown', 'wp_ob_end_flush_all', 1);
+add_action('shutdown', function () {
+    while (@ob_end_flush());
+});
+
+/**
  * Add <body> classes
  */
 add_filter('body_class', function (array $classes) {
