@@ -16,7 +16,7 @@ Sagestarter is a WordPress starter theme based on [Roots/Sage](https://roots.io/
 * Customised TinyMCE toolbar ([app/tinymce.php](https://github.com/MoshCat/sagestarter/blob/master/app/tinymce.php)).
 * CustomEvent polyfill ([Sage docs](https://roots.io/sage/docs/sage-compatibility/#known-issues-with-internet-explorer)).
 * Animated [hamburger](https://jonsuh.com/hamburgers/) menu.
-* Disabled Gutenburg editor and frontend block-styles.
+* Disabled [Gutenburg editor](https://github.com/MoshCat/sagestarter/blob/master/app/filters.php#L48) and [frontend block-styles](https://github.com/MoshCat/sagestarter/blob/8616e59e6d342f5ab3c2252bcf6d89883bdc8fd7/app/admin.php#L12).
 * Basic page, blog, archive & search styling.
 * Gravityforms support in submodules ([Gravityforms Bootstrap Styling](https://github.com/MoshCat/gravityforms-bootstrap-styling) and [Gravityforms Bootstrap hooks](https://github.com/MoshCat/gravityforms-bootstrap-hooks)).
 * [Webfontloader](https://github.com/typekit/webfontloader).
@@ -27,18 +27,18 @@ Sagestarter is a WordPress starter theme based on [Roots/Sage](https://roots.io/
 * Clone Sagestarter to your WordPress themes directory:
 ```shell
 # @ app/themes/ or wp-content/themes/
-$ git clone --depth=1 git@github.com:MoshCat/sagestarter.git your-theme-name
+$ git clone --depth=1 git@github.com:MoshCat/sagestarter.git your_theme_name
 ```
 
 * Or clone with submodules to include [Gravityforms Bootstrap Styling](https://github.com/MoshCat/gravityforms-bootstrap-styling) and [Gravityforms Bootstrap hooks](https://github.com/MoshCat/gravityforms-bootstrap-hooks) ([see below](https://github.com/MoshCat/sagestarter#gravityforms)):
 ```shell
 # @ app/themes/ or wp-content/themes/
-$ git clone --recurse-submodules --depth=1 git@github.com:MoshCat/sagestarter.git your-theme-name
+$ git clone --recurse-submodules --depth=1 git@github.com:MoshCat/sagestarter.git your_theme_name
 ```
 
 * Remove git history and create new git:
 ```shell
-# @ app/themes/ or wp-content/themes/themefolder
+# @ app/themes/ or wp-content/themes/your_theme_name
 $ rm -rf .git
 $ git init
 ```
@@ -49,7 +49,7 @@ $ git init
   * `publicPath` should reflect your WordPress folder structure.
 * Run `yarn && yarn build` from the theme directory to install dependencies and build the theme assets
 
-## Gravityforms
+### Gravityforms
 
 If you plan on using Gravityforms, clone this git with submodules as mentioned above.
 If you have already cloned the project use: `git submodule update --init --recursive` to initialize, fetch and checkout all submodules.
