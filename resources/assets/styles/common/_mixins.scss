@@ -1,0 +1,196 @@
+/* TABLE OF CONTENTS:
+---------------------------------------------------
+# Paddings & margins
+  ## Vertical Paddings
+  ## Vertical Margins
+  ## Negative Vertical Margins
+  ## Content Padding
+# Vertical Center
+# Aspect Ratio
+# Define as classes
+*/
+
+/* Paddings & margins
+-------------------------------------------------- */
+$vspace_sm:    1.5rem;
+$vspace_md:    3rem;
+$vspace_xl:    $vspace_md * 2;
+$breakpoint_1: "lg";
+$breakpoint_2: "xl";
+
+// Vertical Paddings
+@mixin pt($size: "md") {
+  padding-top: $vspace_sm;
+
+  @include media-breakpoint-up($breakpoint_1) {
+    padding-top: $vspace_md;
+  }
+
+  @if $size == "lg" {
+    @include media-breakpoint-up($breakpoint_2) {
+      padding-top: $vspace_xl;
+    }
+  }
+}
+
+@mixin pb($size: "md") {
+  padding-bottom: $vspace_sm;
+
+  @include media-breakpoint-up($breakpoint_1) {
+    padding-bottom: $vspace_md;
+  }
+
+  @if $size == "lg" {
+    @include media-breakpoint-up($breakpoint_2) {
+      padding-bottom: $vspace_xl;
+    }
+  }
+}
+
+// Vertical Margins
+@mixin mt($size: "md") {
+  margin-top: $vspace_sm;
+
+  @include media-breakpoint-up($breakpoint_1) {
+    margin-top: $vspace_md;
+  }
+
+  @if $size == "lg" {
+    @include media-breakpoint-up($breakpoint_2) {
+      margin-top: $vspace_xl;
+    }
+  }
+}
+
+@mixin mb($size: "md") {
+  margin-bottom: $vspace_sm;
+
+  @include media-breakpoint-up($breakpoint_1) {
+    margin-bottom: $vspace_md;
+  }
+
+  @if $size == "lg" {
+    @include media-breakpoint-up($breakpoint_2) {
+      margin-bottom: $vspace_xl;
+    }
+  }
+}
+
+// Negative Vertical Margins
+@mixin nmt($size: "md") {
+  margin-top: -$vspace_sm;
+
+  @include media-breakpoint-up($breakpoint_1) {
+    margin-top: -$vspace_md;
+  }
+
+  @if $size == "lg" {
+    @include media-breakpoint-up($breakpoint_2) {
+      margin-top: -$vspace_xl;
+    }
+  }
+}
+
+@mixin nmb($size: "md") {
+  margin-bottom: -$vspace_sm;
+
+  @include media-breakpoint-up($breakpoint_1) {
+    margin-bottom: -$vspace_md;
+  }
+
+  @if $size == "lg" {
+    @include media-breakpoint-up($breakpoint_2) {
+      margin-bottom: -$vspace_xl;
+    }
+  }
+}
+
+// Content Padding
+@mixin cp($size: "md") {
+  padding: $vspace_md;
+
+  @if $size == "lg" {
+    @include media-breakpoint-up($breakpoint_2) {
+      padding: $vspace_xl;
+    }
+  }
+}
+
+/* Aspect Ratio
+-------------------------------------------------- */
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+
+  > .aspect-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+/* Define as classes
+-------------------------------------------------- */
+.pt {
+  @include pt;
+
+  &-lg {
+    @include pt("lg");
+  }
+}
+
+.pb {
+  @include pb;
+
+  &-lg {
+    @include pb("lg");
+  }
+}
+
+.mt {
+  @include mt;
+
+  &-lg {
+    @include mt("lg");
+  }
+}
+
+.mb {
+  @include mb;
+
+  &-lg {
+    @include mb("lg");
+  }
+}
+
+.nmt {
+  @include nmt;
+
+  &-lg {
+    @include nmt("lg");
+  }
+}
+
+.nmb {
+  @include nmb;
+
+  &-lg {
+    @include nmb("lg");
+  }
+}
+
+.cp {
+  @include cp;
+
+  &-lg {
+    @include cp("lg");
+  }
+}

@@ -1,0 +1,42 @@
+body {
+  .wrap > .content {
+    @include pt();
+    @include mb();
+  }
+
+  &:not(.page-template) {
+    .wrap > .content {
+      @include make-row();
+
+      > main {
+        @include make-col-ready();
+        @include make-col(12);
+
+        @extend .clearfix;
+        @extend .mx-auto;
+
+        @include media-breakpoint-up(lg) {
+          @include make-col(9);
+        }
+      }
+    }
+  }
+
+  &.sidebar-primary {
+    .wrap > .content {
+      > main {
+        @include media-breakpoint-up(lg) {
+          @include make-col(9);
+        }
+      }
+
+      > aside.sidebar {
+        @include make-col-ready();
+
+        @include media-breakpoint-up(lg) {
+          @include make-col(3);
+        }
+      }
+    }
+  }
+}

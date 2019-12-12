@@ -3,6 +3,20 @@
 namespace App;
 
 /**
+ * Add dropdown icon if menu item has children.
+ */
+add_filter('nav_menu_item_title', function ($title, $item, $args, $depth) {
+    if ('primary_navigation' === $args->theme_location) {
+        foreach ($item->classes as $value) {
+            if ('menu-item-has-children' === $value || 'page_item_has_children' === $value) {
+                $title = $title . '<svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" aria-hidden="true" role="img" class="angleDown"><path fill="currentColor" d="M1 0l3 3 3-3 1 1-4 4-4-4z"/></svg>';
+            }
+        }
+    }
+    return $title;
+}, 10, 4);
+
+/**
  * Add <body> classes
  */
 add_filter('body_class', function (array $classes) {

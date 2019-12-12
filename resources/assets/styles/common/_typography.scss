@@ -1,0 +1,47 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+blockquote {
+  @include cp();
+
+  @extend .blockquote;
+
+  background-color: $gray-100;
+  border: $gray-200 $border-width solid;
+  margin-bottom: $paragraph-margin-bottom * 2;
+  color: $gray-700;
+  clear: both;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+ul,
+ol {
+  margin-bottom: $paragraph-margin-bottom * 2;
+}
+
+dl:not(.gallery-item) {
+  @include make-row();
+
+  margin-bottom: $paragraph-margin-bottom;
+
+  dt {
+    @include make-col-ready();
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(3);
+    }
+  }
+
+  dd {
+    @include make-col-ready();
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(9);
+    }
+  }
+}

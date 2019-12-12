@@ -4,6 +4,17 @@
  */
 
 /** Media alignment */
+.alignnone,
+.aligncenter,
+.alignleft,
+.alignright {
+  margin-bottom: $spacer * 1.5;
+
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+  }
+}
+
 .alignnone {
   margin-left: 0;
   margin-right: 0;
@@ -13,25 +24,24 @@
 
 .aligncenter {
   display: block;
-  margin: ($spacer / 2) auto;
+  margin: $spacer * 1.5 auto;
   height: auto;
 }
 
 .alignleft,
 .alignright {
-  margin-bottom: ($spacer / 2);
   height: auto;
 }
 
 @include media-breakpoint-up(sm) {
   .alignleft {
     float: left;
-    margin-right: ($spacer / 2);
+    margin-right: $spacer * 1.5;
   }
 
   .alignright {
     float: right;
-    margin-left: ($spacer / 2);
+    margin-left: $spacer * 1.5;
   }
 }
 
@@ -47,6 +57,9 @@
 
 .wp-caption-text {
   @extend .figure-caption;
+
+  line-height: 1.4;
+  font-size: 0.8125rem;
 }
 
 /** Text meant only for screen readers */

@@ -1,0 +1,48 @@
+body.archive,
+body.search,
+body.blog {
+  article {
+    @include mb();
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+      align-items: flex-start;
+
+      .entry-summary {
+        flex: 1;
+        word-break: break-word;
+
+        > *:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+article.post {
+  &.sticky {
+    padding: $spacer;
+    background-color: $light;
+    border: $border-width solid $border-color;
+  }
+
+  .post-meta {
+    margin-top: -$headings-margin-bottom;
+  }
+
+  .categories,
+  .updated,
+  .author {
+    color: $text-muted;
+    font-size: $font-size-sm;
+  }
+
+  header {
+    margin-bottom: 0.5rem;
+  }
+}
