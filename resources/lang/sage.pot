@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-22 13:26+0200\n"
+"POT-Creation-Date: 2019-12-12 12:23+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,7 @@ msgctxt "submit button"
 msgid "Search"
 msgstr ""
 
-#: app/filters.php:72
+#: app/filters.php:99
 msgid "Continued"
 msgstr ""
 
@@ -77,24 +77,462 @@ msgstr ""
 msgid "Collapse submenu"
 msgstr ""
 
-#: app/setup.php:65
+#: app/setup.php:79
 msgid "Primary Navigation"
 msgstr ""
 
-#: app/setup.php:104
+#: app/setup.php:118
 msgid "Primary"
 msgstr ""
 
-#: app/tinymce.php:30
+#: app/setup.php:122
+msgid "Footer"
+msgstr ""
+
+#: app/fields/flexbuilder.php:17
+msgid "Add Section"
+msgstr ""
+
+#: app/fields/flexbuilder.php:21
+msgid "Posts"
+msgstr ""
+
+#: app/fields/flexbuilder.php:22
+msgid "Item list"
+msgstr ""
+
+#: app/fields/flexbuilder.php:23 app/fields/flexbuilder/posts.php:24
+#: app/fields/flexbuilder/item_list.php:33
+msgid "Columns"
+msgstr ""
+
+#: app/fields/flexbuilder/columns.php:15
+msgid "Add columns"
+msgstr ""
+
+#: app/fields/flexbuilder/columns.php:20
+#: app/fields/flexbuilder/partials/column_content.php:23
+msgid "Heading"
+msgstr ""
+
+#: app/fields/flexbuilder/columns.php:24
+msgid "Divider"
+msgstr ""
+
+#: app/fields/flexbuilder/columns.php:25
+msgid "Display Horizontal rule"
+msgstr ""
+
+#: app/fields/flexbuilder/columns.php:28
+msgid "1 Column Narrow"
+msgstr ""
+
+#: app/fields/flexbuilder/columns.php:34
+msgid "1 Column"
+msgstr ""
+
+#: app/fields/flexbuilder/columns.php:40
+msgid "2 Columns"
+msgstr ""
+
+#: app/fields/flexbuilder/columns.php:49
+msgid "3 Columns"
+msgstr ""
+
+#: app/fields/flexbuilder/columns.php:61
+msgid "Left wide"
+msgstr ""
+
+#: app/fields/flexbuilder/columns.php:70
+msgid "Right wide"
+msgstr ""
+
+#: app/fields/flexbuilder/columns.php:86
+#: app/fields/flexbuilder/components/video.php:24
+#: app/fields/flexbuilder/item_list.php:46
+#: app/fields/flexbuilder/item_list.php:52
+msgid "Options"
+msgstr ""
+
+#: app/fields/flexbuilder/columns.php:87
+#: app/fields/flexbuilder/item_list.php:53
+msgid "Center all text"
+msgstr ""
+
+#: app/fields/flexbuilder/columns.php:88
+msgid "Vertical center"
+msgstr ""
+
+#: app/fields/flexbuilder/components/tabs.php:12
+msgid "Add tab"
+msgstr ""
+
+#: app/fields/flexbuilder/components/tabs.php:16
+#: app/fields/flexbuilder/components/accordion.php:15
+msgid "Title"
+msgstr ""
+
+#: app/fields/flexbuilder/components/tabs.php:19
+msgid "Text"
+msgstr ""
+
+#: app/fields/flexbuilder/components/button_group.php:9
+#: app/fields/flexbuilder/components/button_align.php:9
+msgid "Alignment"
+msgstr ""
+
+#: app/fields/flexbuilder/components/button_group.php:10
+#: app/fields/flexbuilder/components/button_align.php:10
+msgid "Left"
+msgstr ""
+
+#: app/fields/flexbuilder/components/button_group.php:11
+#: app/fields/flexbuilder/components/button_align.php:11
+msgid "Center"
+msgstr ""
+
+#: app/fields/flexbuilder/components/button_group.php:12
+#: app/fields/flexbuilder/components/button_align.php:12
+msgid "Right"
+msgstr ""
+
+#: app/fields/flexbuilder/components/button_group.php:14
+#: app/fields/flexbuilder/components/button_size.php:9
+#: app/fields/flexbuilder/components/image.php:11 app/tinymce.php:29
 msgid "Size"
 msgstr ""
 
-#: app/tinymce.php:33
-msgid "Lead"
+#: app/fields/flexbuilder/components/button_group.php:15
+#: app/fields/flexbuilder/components/button_size.php:10 app/tinymce.php:37
+msgid "Small"
 msgstr ""
 
-#: app/tinymce.php:38
-msgid "Small"
+#: app/fields/flexbuilder/components/button_group.php:16
+#: app/fields/flexbuilder/components/button_size.php:11
+#: app/fields/flexbuilder/partials/container_width.php:11
+#: app/fields/flexbuilder/item_list.php:64
+msgid "Normal"
+msgstr ""
+
+#: app/fields/flexbuilder/components/button_group.php:17
+#: app/fields/flexbuilder/components/button_size.php:12
+msgid "Large"
+msgstr ""
+
+#: app/fields/flexbuilder/components/button_group.php:19
+msgid "Add button"
+msgstr ""
+
+#: app/fields/flexbuilder/components/accordion.php:12
+msgid "Add item"
+msgstr ""
+
+#: app/fields/flexbuilder/components/button_align.php:13
+msgid "Block"
+msgstr ""
+
+#: app/fields/flexbuilder/components/heading.php:11
+msgid "H1"
+msgstr ""
+
+#: app/fields/flexbuilder/components/heading.php:12
+msgid "H2"
+msgstr ""
+
+#: app/fields/flexbuilder/components/heading.php:13
+msgid "H3"
+msgstr ""
+
+#: app/fields/flexbuilder/components/heading.php:14
+msgid "H4"
+msgstr ""
+
+#: app/fields/flexbuilder/components/googlemap.php:9
+msgid "Map"
+msgstr ""
+
+#: app/fields/flexbuilder/components/button_color.php:9
+msgid "Color"
+msgstr ""
+
+#: app/fields/flexbuilder/components/button_color.php:10
+#: app/fields/flexbuilder/partials/row_bg.php:11 app/tinymce.php:72
+msgid "Color 1"
+msgstr ""
+
+#: app/fields/flexbuilder/components/button_color.php:11
+msgid "Color 1 outline"
+msgstr ""
+
+#: app/fields/flexbuilder/components/button_color.php:12
+#: app/fields/flexbuilder/partials/row_bg.php:12 app/tinymce.php:77
+msgid "Color 2"
+msgstr ""
+
+#: app/fields/flexbuilder/components/button_color.php:13
+msgid "Color 2 outline"
+msgstr ""
+
+#: app/fields/flexbuilder/components/button_color.php:14
+#: app/fields/flexbuilder/partials/row_bg.php:13 app/tinymce.php:92
+msgid "Light"
+msgstr ""
+
+#: app/fields/flexbuilder/components/button_color.php:15
+msgid "Light outline"
+msgstr ""
+
+#: app/fields/flexbuilder/components/button_color.php:16
+#: app/fields/flexbuilder/partials/row_bg.php:14 app/tinymce.php:97
+msgid "Dark"
+msgstr ""
+
+#: app/fields/flexbuilder/components/button_color.php:17
+msgid "Dark outline"
+msgstr ""
+
+#: app/fields/flexbuilder/components/video.php:10
+#: app/fields/flexbuilder/item_list.php:32
+msgid "Layout"
+msgstr ""
+
+#: app/fields/flexbuilder/components/video.php:11
+msgid "Embed"
+msgstr ""
+
+#: app/fields/flexbuilder/components/video.php:12
+msgid "MP4"
+msgstr ""
+
+#: app/fields/flexbuilder/components/video.php:31
+msgid "Controls"
+msgstr ""
+
+#: app/fields/flexbuilder/components/video.php:32
+msgid "Preload"
+msgstr ""
+
+#: app/fields/flexbuilder/components/video.php:33
+msgid "Loop"
+msgstr ""
+
+#: app/fields/flexbuilder/components/video.php:34
+msgid "Autoplay"
+msgstr ""
+
+#: app/fields/flexbuilder/components/button_content.php:9
+#: app/fields/flexbuilder/components/button.php:9
+msgid "Button link"
+msgstr ""
+
+#: app/fields/flexbuilder/components/image.php:12
+msgid "Choose a size"
+msgstr ""
+
+#: app/fields/flexbuilder/components/image.php:13
+msgid "1/4"
+msgstr ""
+
+#: app/fields/flexbuilder/components/image.php:14
+msgid "1/4 Square"
+msgstr ""
+
+#: app/fields/flexbuilder/components/image.php:15
+msgid "1/3"
+msgstr ""
+
+#: app/fields/flexbuilder/components/image.php:16
+msgid "1/3 Square"
+msgstr ""
+
+#: app/fields/flexbuilder/components/image.php:17
+msgid "2/3"
+msgstr ""
+
+#: app/fields/flexbuilder/components/image.php:18
+msgid "1/2"
+msgstr ""
+
+#: app/fields/flexbuilder/components/image.php:19
+msgid "1/2 Square"
+msgstr ""
+
+#: app/fields/flexbuilder/components/image.php:20
+msgid "1/1"
+msgstr ""
+
+#: app/fields/flexbuilder/components/image.php:22
+msgid "Link to large?"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/column_content.php:10
+msgid "Add content"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/column_content.php:13
+msgid "Alertbox"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/column_content.php:14
+msgid "Table"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/column_content.php:15
+msgid "Googlemap"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/column_content.php:16
+msgid "Tabs"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/column_content.php:17
+msgid "Accordion"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/column_content.php:18
+msgid "Video"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/column_content.php:19
+msgid "Gallery"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/column_content.php:20
+msgid "Button group"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/column_content.php:21
+msgid "Button"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/column_content.php:22
+msgid "Image"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/column_content.php:24
+msgid "Text Editor"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/container_width.php:9
+msgid "Container"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/container_width.php:10
+msgid "Wide"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/container_width.php:12
+msgid "Narrow"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/container_width.php:13
+msgid "Extra narrow"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/row_bg.php:9
+msgid "Background"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/row_bg.php:10
+msgid "None"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/row_bg.php:15
+#: app/fields/flexbuilder/partials/row_bg.php:17
+msgid "Background image"
+msgstr ""
+
+#: app/fields/flexbuilder/partials/row_bg.php:19
+msgid "Background repeat"
+msgstr ""
+
+#: app/fields/flexbuilder/posts.php:12
+msgid "Intro"
+msgstr ""
+
+#: app/fields/flexbuilder/posts.php:32
+msgid "Amount"
+msgstr ""
+
+#: app/fields/flexbuilder/posts.php:46
+msgid "Excerpt length"
+msgstr ""
+
+#: app/fields/flexbuilder/posts.php:54
+msgid "Post type"
+msgstr ""
+
+#: app/fields/flexbuilder/posts.php:61
+msgid "Posts options"
+msgstr ""
+
+#: app/fields/flexbuilder/posts.php:69
+msgid "Show date"
+msgstr ""
+
+#: app/fields/flexbuilder/posts.php:70
+msgid "Show author"
+msgstr ""
+
+#: app/fields/flexbuilder/posts.php:71
+msgid "Show categories"
+msgstr ""
+
+#: app/fields/flexbuilder/posts.php:72
+msgid "Show 'More posts' button"
+msgstr ""
+
+#: app/fields/flexbuilder/posts.php:82
+msgid "Category"
+msgstr ""
+
+#: app/fields/flexbuilder/item_list.php:12
+#: app/fields/flexbuilder/item_list.php:13
+msgid "Intro (optional)"
+msgstr ""
+
+#: app/fields/flexbuilder/item_list.php:34
+msgid "Rows"
+msgstr ""
+
+#: app/fields/flexbuilder/item_list.php:35
+msgid "Wide rows"
+msgstr ""
+
+#: app/fields/flexbuilder/item_list.php:38
+msgid "Column amount"
+msgstr ""
+
+#: app/fields/flexbuilder/item_list.php:48
+msgid "Alternate rows"
+msgstr ""
+
+#: app/fields/flexbuilder/item_list.php:49
+msgid "Large images"
+msgstr ""
+
+#: app/fields/flexbuilder/item_list.php:56
+msgid "Buttons"
+msgstr ""
+
+#: app/fields/flexbuilder/item_list.php:61
+msgid "Image shape"
+msgstr ""
+
+#: app/fields/flexbuilder/item_list.php:65
+msgid "Crop"
+msgstr ""
+
+#: app/fields/flexbuilder/item_list.php:66
+msgid "Square"
+msgstr ""
+
+#: app/fields/flexbuilder/item_list.php:67
+msgid "Round"
+msgstr ""
+
+#: app/tinymce.php:32
+msgid "Lead"
 msgstr ""
 
 #: app/tinymce.php:45
@@ -113,28 +551,12 @@ msgstr ""
 msgid "Display 4"
 msgstr ""
 
-#: app/tinymce.php:72
-msgid "Color 1"
-msgstr ""
-
-#: app/tinymce.php:77
-msgid "Color 2"
-msgstr ""
-
 #: app/tinymce.php:82
 msgid "Muted"
 msgstr ""
 
 #: app/tinymce.php:87
 msgid "White"
-msgstr ""
-
-#: app/tinymce.php:92
-msgid "Light"
-msgstr ""
-
-#: app/tinymce.php:97
-msgid "Dark"
 msgstr ""
 
 #: app/Controllers/App.php:20
@@ -162,6 +584,22 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
+#: resources/views/flexbuilder/posts.blade.php:47
+msgid "Read More"
+msgstr ""
+
+#: resources/views/flexbuilder/posts.blade.php:63
+#: resources/views/partials/entry-meta.blade.php:4
+msgid "By"
+msgstr ""
+
+#: resources/views/flexbuilder/posts.blade.php:72
+#: resources/views/partials/content.blade.php:11
+#: resources/views/partials/content-single.blade.php:11
+#: resources/views/partials/content-search.blade.php:14
+msgid "Posted in: "
+msgstr ""
+
 #: resources/views/partials/comments.blade.php:21
 msgid "&larr; Older comments"
 msgstr ""
@@ -175,10 +613,6 @@ msgid "Comments are closed."
 msgstr ""
 
 #: resources/views/partials/content-page.blade.php:2
-#: resources/views/partials/content-single.blade.php:10
+#: resources/views/partials/content-single.blade.php:12
 msgid "Pages:"
-msgstr ""
-
-#: resources/views/partials/entry-meta.blade.php:3
-msgid "By"
 msgstr ""

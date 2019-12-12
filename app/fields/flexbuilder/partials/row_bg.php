@@ -14,7 +14,7 @@ $row_bg
         ->addChoice('bg-dark text-light', __('Dark', 'sage'))
         ->addChoice('bg-img', __('Background image', 'sage'))
         ->setDefaultValue('')
-    ->addImage('background_image', ['return_format' => 'id', 'label' => __('Background Image', 'sage'), 'preview_size' => 'thumbnail'])
+    ->addImage('background_image', ['return_format' => 'id', 'label' => __('Background image', 'sage'), 'preview_size' => 'thumbnail'])
         ->conditional('row_bg', '==', 'bg-img')
     ->addTrueFalse('background_repeat', ['label' => __('Background repeat', 'sage'), 'ui' => 1])
         ->conditional('row_bg', '==', 'bg-img');
