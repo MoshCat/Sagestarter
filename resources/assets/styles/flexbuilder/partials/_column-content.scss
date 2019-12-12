@@ -1,0 +1,52 @@
+// Alerts
+.alert {
+  // Remove margin-bottom from last element
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  // Make .alert-link color work automaticly
+  a {
+    @extend .alert-link;
+  }
+
+  &.alert-primary {
+    @extend .alert-primary;
+  }
+
+  &.alert-secondary {
+    @extend .alert-secondary;
+  }
+
+  &.alert-info {
+    @extend .alert-info;
+  }
+
+  &.alert-success {
+    @extend .alert-success;
+  }
+
+  &.alert-warning {
+    @extend .alert-warning;
+  }
+
+  &.alert-danger {
+    @extend .alert-danger;
+  }
+}
+
+// Accordion
+.accordion {
+  a {
+    text-decoration: none;
+  }
+
+  .card-body > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Tabs
+.tab-content .tab-pane > *:last-child {
+  margin-bottom: 0;
+}

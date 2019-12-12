@@ -2,7 +2,14 @@
 
 namespace App;
 
-/*
+/**
+* Add Flexbuilder Styling
+*/
+add_action('admin_enqueue_scripts', function () {
+    wp_enqueue_style('flexbuilder', get_template_directory_uri() . '/flexbuilder/flexbuilder.css', array(), '1.0');
+});
+
+/**
  * Remove the block styles file from wp_head()
  */
 add_action('wp_enqueue_scripts', function () {

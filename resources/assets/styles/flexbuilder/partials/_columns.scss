@@ -1,0 +1,8 @@
+.main > section.columns {
+  @include pb();
+
+  // Remove margin-bottom from last element in last row
+  [class*="row"]:last-child [class*="col-"] > .inner > *:last-child {
+    margin-bottom: 0;
+  }
+}
