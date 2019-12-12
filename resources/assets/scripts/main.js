@@ -1,4 +1,5 @@
 // import external dependencies
+import 'custom-event-polyfill'; // https://roots.io/sage/docs/sage-compatibility/#known-issues-with-internet-explorer
 import 'jquery';
 
 // Import everything from autoload
