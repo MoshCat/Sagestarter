@@ -17,6 +17,20 @@ add_filter('nav_menu_item_title', function ($title, $item, $args, $depth) {
 }, 10, 4);
 
 /**
+ * Display sidebar
+ */
+add_filter('sage/display_sidebar', function ($display) {
+    static $display;
+
+    isset($display) || $display = in_array(true, [
+      // The sidebar will be displayed if any of the following return true
+      is_single(),
+    ]);
+
+    return $display;
+});
+
+/**
  * Disable Gutenberg editor
  */
 add_filter('use_block_editor_for_post', '__return_false');
