@@ -10,6 +10,13 @@ add_action('wp_enqueue_scripts', function () {
 });
 
 /**
+ * Load language files
+ */
+add_action('after_setup_theme', function () {
+    load_theme_textdomain('sage', get_template_directory() . '/lang');
+});
+
+/**
  * Cleanup and customize the admin with Intervention
  * @link https://github.com/soberwp/intervention
  */
