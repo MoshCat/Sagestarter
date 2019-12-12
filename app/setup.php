@@ -31,6 +31,26 @@ add_action('wp_enqueue_scripts', function () {
  */
 add_action('after_setup_theme', function () {
     /**
+     * Add Image sizes
+     */
+    add_image_size('fullwidth', 1440, 9999);
+    add_image_size('large_letterbox', 1440, 720, true);
+    add_image_size('one', 956, 9999);
+    add_image_size('one_half', 556, 9999);
+    add_image_size('one_half_crop', 556, 371, true);
+    add_image_size('one_half_square', 556, 556, true);
+    add_image_size('one_half_wide', 720, 400, true);
+    add_image_size('one_third', 356, 9999);
+    add_image_size('one_third_crop', 356, 237, true);
+    add_image_size('one_third_square', 356, 356, true);
+    add_image_size('two_third', 712, 9999);
+    add_image_size('two_third_wide', 960, 480, true);
+    add_image_size('one_fourth', 256, 9999);
+    add_image_size('one_fourth_crop', 256, 171, true);
+    add_image_size('one_fourth_square', 256, 256, true);
+    add_image_size('thumbnail', 200, 200, true);
+
+    /**
      * Enable features from Soil when plugin is activated
      * @link https://roots.io/plugins/soil/
      */

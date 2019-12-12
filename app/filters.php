@@ -31,6 +31,21 @@ add_filter('sage/display_sidebar', function ($display) {
 });
 
 /**
+ * Make Custom Image Sizes Selectable in Admin
+ */
+add_filter('image_size_names_choose', function ($sizes) {
+    return array_merge($sizes, array(
+        'one_fourth'        => '1/4',
+        'one_fourth_square' => '1/4 Square',
+        'one_third'         => '1/3',
+        'one_third_square'  => '1/3 Square',
+        'one_half'          => '1/2',
+        'one_half_square'   => '1/2 Square',
+        'one'               => '1/1',
+    ));
+});
+
+/**
  * Disable Gutenberg editor
  */
 add_filter('use_block_editor_for_post', '__return_false');
