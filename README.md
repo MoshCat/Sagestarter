@@ -18,6 +18,8 @@ Sagestarter is a WordPress starter theme based on [Roots/Sage](https://roots.io/
 * Animated [hamburger](https://jonsuh.com/hamburgers/) menu.
 * Disabled [Gutenburg editor](https://github.com/MoshCat/sagestarter/blob/master/app/filters.php#L48) and [frontend block-styles](https://github.com/MoshCat/sagestarter/blob/8616e59e6d342f5ab3c2252bcf6d89883bdc8fd7/app/admin.php#L12).
 * Basic page, blog, archive & search styling.
+* SVG icon system (Use: '{!! App\get_theme_svg('calendar') !!}').
+* Social icons menu.
 * [Webfontloader](https://github.com/typekit/webfontloader).
 * Dutch translation.
 

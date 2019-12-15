@@ -5,6 +5,73 @@ namespace App;
 use Roots\Sage\Container;
 
 /**
+ * SVG Icon helper functions
+ */
+if (! function_exists('the_theme_svg')) {
+    /**
+     * Output and Get Theme SVG.
+     * Output and get the SVG markup for an icon in the SvgIcons class.
+     *
+     * @param string $svg_name The name of the icon.
+     * @param string $group The group the icon belongs to.
+     * @param string $color Color code.
+     */
+    function the_theme_svg($svg_name, $group = 'ui', $color = '')
+    {
+        echo get_theme_svg($svg_name, $group, $color);
+    }
+}
+
+if (! function_exists('get_theme_svg')) {
+
+    /**
+     * Get information about the SVG icon.
+     *
+     * @param string $svg_name The name of the icon.
+     * @param string $group The group the icon belongs to.
+     * @param string $color Color code.
+     */
+    function get_theme_svg($svg_name, $group = 'ui', $color = '')
+    {
+
+        // Make sure that only our allowed tags and attributes are included.
+        $svg = wp_kses(
+            SvgIcons::getSvg($svg_name, $group, $color),
+            array(
+                'svg'     => array(
+                    'class'       => true,
+                    'xmlns'       => true,
+                    'width'       => true,
+                    'height'      => true,
+                    'viewbox'     => true,
+                    'aria-hidden' => true,
+                    'role'        => true,
+                    'focusable'   => true,
+               ),
+                'path'    => array(
+                    'fill'      => true,
+                    'fill-rule' => true,
+                    'd'         => true,
+                    'transform' => true,
+               ),
+                'polygon' => array(
+                    'fill'      => true,
+                    'fill-rule' => true,
+                    'points'    => true,
+                    'transform' => true,
+                    'focusable' => true,
+               ),
+            )
+        );
+
+        if (! $svg) {
+            return false;
+        }
+        return $svg;
+    }
+}
+
+/**
  * Simple function to pretty up our field partial includes.
  *
  * @param  mixed $partial

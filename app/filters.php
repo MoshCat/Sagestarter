@@ -3,6 +3,20 @@
 namespace App;
 
 /**
+ * Display SVG icons in social links menu.
+ */
+add_filter('walker_nav_menu_start_el', function ($item_output, $item, $depth, $args) {
+    if ('social' === $args->theme_location) {
+        $svg = SvgIcons::getSocialLinkSvg($item->url);
+        if (empty($svg)) {
+            $svg = get_theme_svg('link');
+        }
+        $item_output = str_replace($args->link_after, '</span>' . $svg, $item_output);
+    }
+    return $item_output;
+}, 10, 4);
+
+/**
  * Add dropdown icon if menu item has children.
  */
 add_filter('nav_menu_item_title', function ($title, $item, $args, $depth) {
