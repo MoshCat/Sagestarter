@@ -65,8 +65,6 @@ array_map(function ($file) use ($sage_error) {
     'admin',
     'tinymce',
     'intervention',
-    'gravityforms/gravityforms',
-    // 'gravityforms/gravityforms-polylang',
     ]);
 
 /**
