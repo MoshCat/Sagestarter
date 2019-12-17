@@ -3,7 +3,7 @@
 [![devDependency Status](https://img.shields.io/david/dev/roots/sage.svg?style=flat-square)](https://david-dm.org/roots/sage#info=devDependencies)
 [![Build Status](https://img.shields.io/travis/roots/sage.svg?style=flat-square)](https://travis-ci.org/roots/sage)
 
-Sagestarter is a WordPress starter theme based on [Roots/Sage](https://roots.io/sage/).
+[Sagestarter](https://sagestarter.middelham.nl) is a WordPress starter theme based on [Roots/Sage](https://roots.io/sage/) which implements a minimal set of features I use in most of my projects. Included is [Flexbuilder](https://github.com/MoshCat/sagestarter/tree/master/app/fields); a boilerplate pagebuilder including some usefull components made with [ACF Builder](https://github.com/StoutLogic/acf-builder).
 
 ## Features
 
@@ -11,16 +11,17 @@ Sagestarter is a WordPress starter theme based on [Roots/Sage](https://roots.io/
 * Cleanup dashboard with [Intervention](https://github.com/soberwp/intervention).
 * Boilerplate variables ([global/_variables.scss](https://github.com/MoshCat/sagestarter/blob/master/resources/assets/styles/common/_variables.scss)).
 * Uniform spacing with mixins ([global/_mixins.scss](https://github.com/MoshCat/sagestarter/blob/master/resources/assets/styles/common/_mixins.scss)).
-* Widget styling [components/_widgets.scss](https://github.com/MoshCat/sagestarter/blob/master/resources/assets/styles/components/_widgets.scss).
-* Gallery styling [components/_galleries.scss](https://github.com/MoshCat/sagestarter/blob/master/resources/assets/styles/components/_galleries.scss)).
+* Widget styling ([components/_widgets.scss](https://github.com/MoshCat/sagestarter/blob/master/resources/assets/styles/components/_widgets.scss)).
+* Gallery styling ([components/_galleries.scss](https://github.com/MoshCat/sagestarter/blob/master/resources/assets/styles/components/_galleries.scss)).
 * Customised TinyMCE toolbar ([app/tinymce.php](https://github.com/MoshCat/sagestarter/blob/master/app/tinymce.php)).
 * CustomEvent polyfill ([Sage docs](https://roots.io/sage/docs/sage-compatibility/#known-issues-with-internet-explorer)).
 * Animated [hamburger](https://jonsuh.com/hamburgers/) menu.
-* Disabled [Gutenburg editor](https://github.com/MoshCat/sagestarter/blob/master/app/filters.php#L48) and [frontend block-styles](https://github.com/MoshCat/sagestarter/blob/8616e59e6d342f5ab3c2252bcf6d89883bdc8fd7/app/admin.php#L12).
+* Disabled Gutenburg editor and frontend block-styles.
 * Basic page, blog, archive & search styling.
-* SVG icon system (Use: '{!! App\get_theme_svg('calendar') !!}').
+* SVG icon system (Use: `{!! App\get_theme_svg('calendar') !!}`).
 * Social icons menu.
 * [Webfontloader](https://github.com/typekit/webfontloader).
+* [Flexbuilder](https://github.com/MoshCat/sagestarter/tree/master/app/fields) made with [ACF Builder](https://github.com/StoutLogic/acf-builder).
 * Dutch translation.
 
 ## Theme installation
