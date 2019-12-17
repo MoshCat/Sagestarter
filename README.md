@@ -45,6 +45,9 @@ $ git init
   * `publicPath` should reflect your WordPress folder structure.
 * Run `yarn && yarn build` from the theme directory to install dependencies and build the theme assets
 
+## Flexbuilder
+[ACF Builder](https://github.com/StoutLogic/acf-builder) will be installed when you run composer. [Advanced Custom Fields Pro](https://www.advancedcustomfields.com/) is required. [ACF Extended](https://wordpress.org/plugins/acf-extended) and [ACF Autosize](https://wordpress.org/plugins/acf-autosize) are highly recommended.
+
 ## Build commands
 
 * `yarn start` — Compile assets when file changes are made, start Browsersync session
