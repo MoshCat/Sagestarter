@@ -1,7 +1,7 @@
 <footer class="content-info">
   <div class="container">
     @if (has_nav_menu('social'))
-      <nav aria-label="<?php esc_attr_e( 'Social links', 'strt' ); ?>" class="social-menu-wrapper">
+      <nav aria-label="<?php esc_attr_e( 'Social links', 'sage' ); ?>" class="social-menu-wrapper">
         <ul class="social-menu">
           {!! wp_nav_menu(
             array(

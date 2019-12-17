@@ -10,7 +10,7 @@ blockquote {
 
   background-color: $gray-100;
   border: $gray-200 $border-width solid;
-  margin-bottom: $paragraph-margin-bottom * 2;
+  margin-bottom: $paragraph-margin-bottom;
   color: $gray-700;
   clear: both;
 
@@ -21,7 +21,7 @@ blockquote {
 
 ul,
 ol {
-  margin-bottom: $paragraph-margin-bottom * 2;
+  margin-bottom: $paragraph-margin-bottom;
 }
 
 dl:not(.gallery-item) {
