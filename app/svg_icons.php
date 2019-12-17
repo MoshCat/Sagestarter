@@ -6,6 +6,7 @@ use Roots\Sage\Container;
 
 /**
  * Custom icons for this theme.
+ * In your template use: {!! App\get_theme_svg('calendar') !!}
  *
  * @subpackage Sagestarter
  * @since 1.0.0
