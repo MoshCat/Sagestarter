@@ -23,6 +23,8 @@
 * [Flexbuilder](https://github.com/MoshCat/sagestarter/tree/master/app/fields) made with [ACF Builder](https://github.com/StoutLogic/acf-builder).
 * Dutch translation.
 
+Check out the [demo](https://middelham.nl/sagestarter).
+
 ## Theme installation
 
 * Clone Sagestarter to your WordPress themes directory:
