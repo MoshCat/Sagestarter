@@ -3,7 +3,7 @@
 [![devDependency Status](https://img.shields.io/david/dev/roots/sage.svg?style=flat-square)](https://david-dm.org/roots/sage#info=devDependencies)
 [![Build Status](https://img.shields.io/travis/roots/sage.svg?style=flat-square)](https://travis-ci.org/roots/sage)
 
-[Sagestarter](https://sagestarter.middelham.nl) is a WordPress starter theme based on [Roots/Sage](https://roots.io/sage/) which implements a minimal set of features I use in most of my projects. Included is [Flexbuilder](https://github.com/MoshCat/sagestarter/tree/master/app/fields); a boilerplate pagebuilder including some usefull components made with [ACF Builder](https://github.com/StoutLogic/acf-builder).
+[Sagestarter](https://sagestarter.middelham.nl) is a WordPress starter theme based on [Roots/Sage](https://roots.io/sage/) which implements a minimal set of features I use in most of my projects. Included is [Flexbuilder](https://github.com/MoshCat/sagestarter/tree/master/app/fields) which is a boilerplate pagebuilder made with [ACF Builder](https://github.com/StoutLogic/acf-builder) including some usefull components.
 
 ## Features
 
