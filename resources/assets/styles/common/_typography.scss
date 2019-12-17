@@ -23,25 +23,3 @@ ul,
 ol {
   margin-bottom: $paragraph-margin-bottom;
 }
-
-dl:not(.gallery-item) {
-  @include make-row();
-
-  margin-bottom: $paragraph-margin-bottom;
-
-  dt {
-    @include make-col-ready();
-
-    @include media-breakpoint-up(sm) {
-      @include make-col(3);
-    }
-  }
-
-  dd {
-    @include make-col-ready();
-
-    @include media-breakpoint-up(sm) {
-      @include make-col(9);
-    }
-  }
-}
