@@ -18,8 +18,7 @@
 * Animated [hamburger](https://jonsuh.com/hamburgers/) menu.
 * Disabled Gutenburg editor and frontend block-styles.
 * Basic page, blog, archive & search styling.
-* SVG icon system (Use: `{!! App\get_theme_svg('calendar') !!}`).
-* Social icons menu.
+* SVG icon system and Social icons menu.
 * [Webfontloader](https://github.com/typekit/webfontloader).
 * [Flexbuilder](https://github.com/MoshCat/sagestarter/tree/master/app/fields) made with [ACF Builder](https://github.com/StoutLogic/acf-builder).
 * Dutch translation.
