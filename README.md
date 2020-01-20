@@ -23,7 +23,7 @@
 * [Flexbuilder](https://github.com/MoshCat/sagestarter/tree/master/app/fields) made with [ACF Builder](https://github.com/StoutLogic/acf-builder).
 * Dutch translation.
 
-Check out the [demo](https://middelham.nl/sagestarter).
+Check out the [demo](https://sagestarter/middelham.nl).
 
 ## Theme installation
 
