@@ -5,7 +5,7 @@ video {
   height: auto;
 }
 
-// Hide .skip-link but but show for keybaord users
+// Hide .skip-link but but show for keyboard users
 .skip-link {
   @include sr-only;
   @include sr-only-focusable;
@@ -28,7 +28,7 @@ video {
       padding: 0.5rem 0.75rem;
       margin-left: -$border-width;
       line-height: 1.25;
-      color: $primary;
+      color: $link-color;
       background-color: #fff;
       border: $border-width solid $border-color;
 
@@ -50,17 +50,21 @@ video {
 
       &.current {
         color: #fff;
-        background-color: $primary;
-        border-color: $primary;
+        background-color: $link-color;
+        border-color: $link-color;
       }
     }
   }
 }
 
-// Make general focus styles equal to Bootstrap's.
+// Make general focus styles equal to Bootstrap's
 button:focus,
 a:focus {
   outline-color: $input-btn-focus-color;
+}
+
+.btn {
+  margin-bottom: 0.5rem;
 }
 
 // Style user-switching text
